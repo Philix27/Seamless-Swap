@@ -3,5 +3,21 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "files.exclude": {
+    "node_modules/": true,
+    "dist": true,
+    "apps/server/node_modules": true,
+    "apps/web": true,
+    "packages": true,
+    "pnpm-lock.yaml": true,
+    ".npmrc": true,
+    ".eslintrc.js": true,
+    "README.md": true,
+    "nest-cli.json": true,
+    ".dockerignore": true,
+    ".gitignore": true,
+    "turbo.json": true,
+    ".env": true
+  }
 }
