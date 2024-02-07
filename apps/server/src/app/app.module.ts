@@ -1,12 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ConfigModule } from '@nestjs/config';
-import { TrpcModule } from '@server/trpc/trpc.module';
-import { AuthModule } from '@server/auth/auth.module';
+import { AppModuleRegistry } from './app.registry';
 
 @Module({
-  imports: [ConfigModule.forRoot(), TrpcModule, AuthModule],
+  imports: AppModuleRegistry,
   controllers: [AppController],
   providers: [AppService],
 })
