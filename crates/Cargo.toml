@@ -17,6 +17,12 @@ dotenvy = "0.15.6"
 env_logger = "0.11"
 diesel = { version = "2.1.3", features = ["postgres", "chrono"] }
 juniper = "0.15.12"
+# tokio = {version = "1.36.0", features = ["macros", "rt-multi-thread"]}
+tonic = "0.10.2"
+prost = "0.12.3"
+
+[build.dependencies]
+tonic-build = "0.10.2"
 
 [package.metadata.scripts]
 db_setup = "diesel migration setup"

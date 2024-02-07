@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Authentication;
+
+
+
+service Verification {
+    rpc verify_email(VerifyEmailRequest) returns (VerifyEmailResponse);
+}
+
+message VerifyEmailRequest {
+string email = 1;
+}
+
+message VerifyEmailResponse {
+    bool isValid = 1;
+}
